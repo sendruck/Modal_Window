@@ -1,0 +1,94 @@
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* слой затемнения */
+
+.lending-portfolio_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.lending-portfolio_table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/* ячейка блочной таблицы */
+
+.lending-portfolio_cell {
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+/* модальный блок */
+
+.lending-portfolio_modal {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    max-width: 50em;
+    background: #835821;
+    opacity: 0.9;
+}
+/* изображения в модальном окне */
+
+.lending-portfolio_modal_image {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lending-portfolio_modal_bg_img {
+    margin: 3% auto;
+    width: 100%;
+    height: 80%;
+    display: block;
+    border: none;
+}
+
+.lending-portfolio_modal_upload_icon {
+    float: right;
+    cursor: pointer;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.lending-portfolio_modal_close_icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.img-container {
+    position: absolute;
+    height: 100%;
+    left: 5%;
+    margin: 0px;
+    width: 185px;
+    background: #5A3A13;
+}
+
+.bg-line {
+        position: absolute;
+    left: 7%;
+    top: 50%;
+    margin-top: -5em;
+}
+
